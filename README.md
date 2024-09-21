@@ -4,4 +4,4 @@
   }
 </style>
 
-<meta http-equiv="refresh" content="0; url=https://new-page.com">
+<meta http-equiv="refresh" content="0; url=https://koulmoir.github.io/hello">
