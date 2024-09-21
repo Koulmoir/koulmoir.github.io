@@ -1,6 +1,6 @@
 <style>
   body {
-    background-color: #000; /* or rgb(0, 0, 0) or hex code #000000 */
+    background-color: #000; 
   }
 </style>
 
