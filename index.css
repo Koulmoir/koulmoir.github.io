@@ -1,0 +1,79 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/sigma.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); 
+    transform: scale(1.05); 
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    width: 40%;
+    height: 40%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.45); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.075)), 
+                      linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.075) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 
+        0 8px 32px 0 rgba(0, 0, 0, 0.15),
+        inset 0 4px 12px rgba(255, 255, 255, 0.3), 
+        inset 0 -4px 12px rgba(0, 0, 0, 0.05);     
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pfp {
+    border-radius: 50%;
+    grid-column: 2;
+    grid-row: 2/3;
+    min-width: 100%;
+    min-height: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+  filter: drop-shadow(0px 0px 20px #000000);
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+}
+.pfp:hover {
+  transform: translate(5px, -5px);
+  filter: drop-shadow(0px 0px 29px #000000);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
