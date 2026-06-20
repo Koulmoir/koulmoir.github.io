@@ -68,17 +68,15 @@
 }
 
 .info-container {
-    /* Places it on the right side of the 8-column grid */
     grid-column: 5 / 8; 
     grid-row: 1 / 4;
     
-    /* Centers the content vertically and aligns it to the left */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     
-    color: #1c1c1c; /* Dark gray text for readability on the white glass */
+    color: #1c1c1c;
     padding-right: 20px;
 }
 
